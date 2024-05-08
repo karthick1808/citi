@@ -1,15 +1,19 @@
-import os
-from flask import Flask
+FROM ubuntu:12.04
 
-app = Flask(__name__)
+# Update packages and install Python and pip
+RUN apt-get update && apt-get install -y python3 python3-pip
 
-@app.route("/")
-def main():
-    return "Welcome!"
+# Install a specific version of pip (19.3.1 in this example)
+RUN pip3 install --no-cache-dir pip==20.3.4
 
-@app.route("/how_are_you")
-def hello():
-    return "I am good, how about you?"
+# Install Flask using pip
+RUN pip3 install flask
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+# Copy the Flask application files to the container
+COPY app.py /opt/
+
+# Set the FLASK_APP environment variable
+ENV FLASK_APP=/opt/app.py
+
+# Set the entrypoint command to run the Flask application
+ENTRYPOINT ["flask", "run", "--host=0.0.0.0", "--port=8080"]
