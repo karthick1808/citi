@@ -1,0 +1,174 @@
+ Id CommandLine
+  -- -----------
+   1 kubectl get ns
+   2 kubectl get all -n kube-system
+   3 kubectl get all -n default
+   4 clear
+   5 kubectl get all
+   6 kubect delete deployment blue-deployment
+   7 kubectl delete deployment blue-deployment
+   8 kubectl delete deployment green-deployment
+   9 kubectl delete deployment canary-deployment
+  10 kubectl delete deployment primary-deployment
+  11 clear
+  12 kubectl ger all
+  13 kubectl get all
+  14 kubectl delete service/blue-green-service
+  15 kubectl delete service/canary-service
+  16 clear
+  17 kubectl get all
+  18 kubectl get pods
+  19 kubectl run --help
+  20 clear
+  21 kubectl run nginx --image=nginx
+  22 kubectl get pods
+  23 kubectl describe pods
+  24 kubectl run httpd --image=httpd
+  25 kubectl get pods
+  26 kubectl get pods
+  27 kubectl describe httpd
+  28 kubectl describe pod httpd
+  29 docker image ls
+  30 docker login
+  31 kubectl run httpd --image=httpd --dry-run -o yaml
+  32 kubectl delete pod nginx
+  33 kubectl delete pod httpd
+  34 kubectl get pods
+  35 notepad pod1.yaml
+  36 kuectl explain pod
+  37 kubectl explain pod
+  38 kubectl apply -f .\pod1.yaml
+  39 kubectl get pods
+  40 cat .\pod1.yaml
+  41 cp .\pod1.yaml .\pod2.yaml
+  42 vim .\pod2.yaml
+  43 notepad .\pod2.yaml
+  44 kubectl apply -f .\pod2.yaml
+  45 kubectl get pods
+  46 kubectl describe pod httpd
+  47 kubectl describe pod webserver
+  48 clear
+  49 kubectl explain rs
+  50 kubectl explain replicacontroller
+  51 kubectl explain rc
+  52 kubectl explain deployment
+  53 kubectl explain service
+  54 kubectl explain jobs
+  55 kubectl explain stateful
+  56 kubectl explain statefull
+  57 kubectl explain state
+  58 kubectl explain --help
+  59 kubectl explain pods
+  60 kubectl explain rs
+  61 kubectl explain deployment
+  62 kubectl explain service
+  63 ls
+  64 clear
+  65 kubectl --help
+  66 kubectl create --help
+  67 kubectl run --help
+  68 kubectl run rs
+  69 kubectl replicasets
+  70 kubectl explain rs
+  71 cp .\pod2.yaml .\pod3.yaml
+  72 notepad .\pod3.yaml
+  73 kubectl get pods
+  74 kubectl delete pod httpd
+  75 kubectl delete pod webserver
+  76 kubectl get pods
+  77 kubectl get rs
+  78 kubectl apply .\pod3.yaml
+  79 kubectl apply -f .\pod3.yaml
+  80 notepad .\pod3.yaml
+  81 notepad .\pod3.yaml
+  82 kubectl apply -f .\pod3.yaml
+  83 notepad .\pod3.yaml
+  84 notepad .\pod3.yaml
+  85 kubectl apply -f .\pod3.yaml
+  86 kubectl get rs
+  87 kubectl get pods
+  88 kubectl apply -f .\pod3.yaml
+  89 kubectl get rs
+  90 kubectl get pods
+  91 kubectl get pods
+  92 kubectl get pods
+  93 kubectl get pods
+  94 kubectl get pods
+  95 kubectl get pods
+  96 kubectl get pods
+  97 kubectl get pods
+  98 kubectl get pods
+  99 kubectl get pods
+ 100 kubectl get pods
+ 101 kubectl delete pod karthick-rs-bd8sz
+ 102 kubectl get pods
+ 103 kubectl delete pod karthick-rs-f6vc8
+ 104 kubectl get rs
+ 105 kubectl delete pod karthick-rs-hlp7q
+ 106 kubectl get rs
+ 107 kubectl get rs
+ 108 kubectl apply -f .\pod3.yaml
+ 109 kubectl get rs
+ 110 kubectl get pods
+ 111 kubectl apply -f .\pod3.yaml
+ 112 kubectl get pods
+ 113 kubectl get pods
+ 114 kubectl describe karthick-rs-hdmdx
+ 115 kubectl describe pod karthick-rs-hdmdx
+ 116 kubectl get pods
+ 117 kubectl describe pods karthick-rs-hdmdx
+ 118 kubectl apply -f .\pod3.yaml
+ 119 notepad pod4.yaml
+ 120 kubectl apply -f .\pod4.yaml
+ 121 kubectl get pods
+ 122 kubectl get pods
+ 123 kubectl get pods my-pod
+ 124 kubectl describe pods my-pod
+ 125 kubectl logs my-pod
+ 126 kubectl logs my-pod
+ 127 kubectl logs my-pod
+ 128 kubectl logs my-pod
+ 129 kubectl logs my-pod
+ 130 kubectl logs my-pod --watch
+ 131 kubectl logs my-pod
+ 132 kubectl logs my-pod
+ 133 kubectl delete -f .\pod1.yaml
+ 134 kubectl delete -f .\pod2.yaml
+ 135 kubectl delete -f .\pod3.yaml
+ 136 kubectl delete -f .\pod4.yaml
+ 137 notepad .\pod5.yaml
+ 138 kubectl get all
+ 139 kubectl apply -f .\pod5.yaml
+ 140 kubectl get all
+ 141 kubectl get all
+ 142 clear
+ 143 kubectl get ds
+ 144 kubectl get deployments
+ 145 kubectl get rs
+ 146 kubectl get pod
+ 147 kubectl describe pod nginx-deployment-66566df975-66jc5
+ 148 kubectl apply -f .\pod5.yaml
+ 149 kubectl describe deployment
+ 150 kubectl apply -f .\pod5.yaml
+ 151 kubectl describe deployment
+ 152 kubectl apply -f .\pod5.yaml
+ 153 kubectl describe deployment
+ 154 kubectl delete -f .\pod5.yaml
+ 155 kubectl get all
+ 156 notepad .\pod6.yaml
+ 157 kubectl apply -f .\pod6.yaml
+ 158 kubectl describe deployment
+ 159 kubectl apply -f .\pod6.yaml
+ 160 kubectl describe deployment
+ 161 notepad  pod7.yaml
+ 162 kubectl apply -f .\pod7.yaml
+ 163 kubect get deployment
+ 164 kubectl get deployment
+ 165 kubectl delete deployment nginx-deploymeny
+ 166 kubectl delete deployment nginx-deployment
+ 167 kubectl get deployment
+ 168 notepad pod8.yaml
+ 169 kubectl get svc
+ 170 kubectl apply -f .\pod8.yaml
+ 171 kubectl get svc
+ 172 kubectl get rs
