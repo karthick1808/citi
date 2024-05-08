@@ -1,0 +1,48 @@
+1  apt-get update -y
+    2  apt-get install docker-ce
+    3  # Add Docker's official GPG key:
+    4  sudo apt-get update
+    5  sudo apt-get install ca-certificates curl
+    6  sudo install -m 0755 -d /etc/apt/keyrings
+    7  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    8  sudo chmod a+r /etc/apt/keyrings/docker.asc
+    9  # Add the repository to Apt sources:
+   10  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   11    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   12  sudo apt-get update
+   13  docker run -d --name karthick -p 80:80 htttpd
+   14  apt-get install docker.io -y
+   15  docker run -d --name karthick -p 80:80 htttpd
+   16  docker -d --name karthick -p 80:80 htttpd
+   17  docker run -d --name karthick -p 80:80 httpd
+   18  docker ps
+   19  ps aux | grep "httpd"
+   20  kill -9 3221
+   21  ip a
+   22  docker run -d --name karthick -p 80:80 httpd
+   23  docker ps
+   24  docker rm -f karthick
+   25  docker run -d --name karthick -p 80:80 httpd
+   26  docker run -d -p 80:80 httpd
+   27  docker run -d -p 81:80 httpd
+   28  docker run -d -p 82:80 httpd
+   29  docker run -d -p 83:80 httpd
+   30  docker run -d -p 84:80 httpd
+   31  docker run -d -p 86:80 httpd
+   32  docker ps
+   33  ps aux | grep "httpd"
+   34  docker ps
+   35  docker attach of
+   36  docker attach 0f51804d8ea4
+   37  docker ps
+   38  docker rm -f 31
+   39  docker rm -f 53
+   40  docker rm -f 89
+   41  docker container prune
+   42  clear
+   43  docker ps
+   44  docker ps -a
+   45  docker run -d --name python -p 8080:8080 kardemo
+   46  docker ps
+   47  docker logs da
+   48  history
